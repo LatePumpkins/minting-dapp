@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0x0b8877C54B1DD0731CA6335005062Dde6Fcb3709",
+  "SCAN_LINK": "https://snowtrace.io/token/0x0b8877C54B1DD0731CA6335005062Dde6Fcb3709",
+  "NETWORK": {
+    "NAME": "Avalanche Mainnet C-Chain",
+    "SYMBOL": "AVAX",
+    "CHAIN_ID": 43114,
+    "ID": 1
+  },
+  "NFT_NAME": "LatePumpkins",
+  "SYMBOL": "Pumpkin",
+  "MAX_SUPPLY": 3110,
+  "WEI_COST": 311000000000000000,
+  "DISPLAY_COST": 0.311,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "NFTrade",
+  "MARKETPLACE_LINK": "https://app.nftrade.com/assets/avalanche/0x0b8877c54b1dd0731ca6335005062dde6fcb3709",
+  "SHOW_BACKGROUND": true
+}
