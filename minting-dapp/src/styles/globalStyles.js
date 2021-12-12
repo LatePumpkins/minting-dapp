@@ -45,7 +45,7 @@ export const Container = styled.div`
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
   width: 100%;
-  min-width: 290px;
+  min-width: 400px;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -75,6 +75,7 @@ export const GifContainer = styled.div`
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
   width: 100%;
+ 
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -83,6 +84,13 @@ export const GifContainer = styled.div`
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+`;
+
+export const TextHuge = styled.p`
+  color: var(--primary-text);
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.6;
 `;
