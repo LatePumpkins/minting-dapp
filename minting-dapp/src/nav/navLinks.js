@@ -4,6 +4,7 @@ export const navLinks = [
 	{ navLinkId: 'Rarity', scrollToId: 'rarityContainer' },
 	{ navLinkId: 'Breeding', scrollToId: 'breedingContainer' },
 	{ navLinkId: 'Metaverse', scrollToId: 'metaverseContainer' },
+	{ navLinkId: 'Rewards', scrollToId: 'rewardsContainer' },
 	{ navLinkId: 'Attributes', scrollToId: 'attributesContainer' },
 	
 ];

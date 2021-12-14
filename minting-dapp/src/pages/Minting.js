@@ -58,6 +58,28 @@ export const GreyoutButton = styled.button`
   }
 `;
 
+export const FutureButton = styled.button`
+
+  border-radius: 10px;
+  border: none;
+  background-color: #378805;
+  padding: 15px;
+  font-family: "coder";
+  src: local("coder"), url(MinecraftRegular-Bmg3.woff) format("woff");
+  font-weight: bold;
+  color: #f4f7f1;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 0px 6px 0px -2px rgba(55, 136, 5, 0.3);
+  -webkit-box-shadow: 0px 6px 0px -2px rgba(55, 136, 5, 0.3);
+  -moz-box-shadow: 0px 6px 0px -2px rgba(55, 136, 5, 0.3);
+  :active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+`;
+
 export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
@@ -285,6 +307,11 @@ const Minting = () => {
 
     const mintingRef = useNav('Minting');
 
+
+                
+
+  
+
     return (
         <section ref={mintingRef} id='mintingContainer'>
         
@@ -350,27 +377,47 @@ const Minting = () => {
             >
              2nd Harvest:
             </s.TextSubTitle>
+
             <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Price: 0.1555 <span style={{color: "var(--avalanche-red)" }}>AVAX</span> - 50% off<br></br>
-                  Amount: 0/300
-                </s.TextTitle>      
-          <s.TextSubTitle
+                  Price: 0.1555 <span style={{color: "var(--avalanche-red)" }}>AVAX</span> - 50% off <br></br>
+                 
+                </s.TextTitle>
+
+            <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 25,
-                fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
             >
+              Starting in:<br></br>
               {timerComponents.length ? timerComponents : <span>You're late !</span>}
-            </s.TextSubTitle>
-            <s.SpacerMedium />
+            </s.TextTitle>
+
+            <s.SpacerMedium/>
 
 
-            
-            <s.TextTitle
+            {Number(data.totalSupply) == 0 ? (
+
+              <>
+
+              <s.TextTitle    
+                  style={{
+                    textAlign: "center",
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    color: "var(--accent-text)",
+                  }}
+                >
+                  ??? / 300
+              </s.TextTitle>
+                  
+              </>
+
+            ) : (
+              <>
+              <s.TextTitle    
               style={{
                 textAlign: "center",
                 fontSize: 50,
@@ -378,8 +425,11 @@ const Minting = () => {
                 color: "var(--accent-text)",
               }}
             >
-              {200} / {CONFIG.MAX_SUPPLY}
-            </s.TextTitle>
+              {data.totalSupply - 200} / {300}
+              </s.TextTitle></>
+
+
+            )}
             
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -401,27 +451,14 @@ const Minting = () => {
               </>
             ) : (
               <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
+               
                 <s.SpacerXSmall />
               
-                <s.SpacerSmall />
+              
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
-                    <s.TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      Connect to the {CONFIG.NETWORK.NAME} network
-                    </s.TextDescription>
-                    <s.SpacerLarge />
+                    
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
@@ -505,17 +542,40 @@ const Minting = () => {
                 )}
               </>
             )}
-            <s.SpacerLarge />
-            <s.TextDescription
-                style={{
-                  textAlign: "center",
-                  color: "var(--accent-text)",
-                }}
-              >
-                Please make sure you are connected to the right network (
-                {CONFIG.NETWORK.NAME}).
-              </s.TextDescription>
+           
+            
               <s.SpacerMedium/>
+
+              <s.TextSubTitle
+              style={{
+                textAlign: "center",
+                fontSize: 40,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+             Late Harvest:
+            </s.TextSubTitle>
+
+            <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  Price: 0.3110 <span style={{color: "var(--avalanche-red)" }}>AVAX</span> <br></br>
+                  Amount: 2610/3110
+                </s.TextTitle>
+
+            <s.SpacerSmall/>    
+
+            <FutureButton
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  COMING SOON
+                </FutureButton>  
+            <s.SpacerMedium/>
+
+
               <s.RowContainer>
 
               <a href='https://twitter.com/LatePumpKins'>

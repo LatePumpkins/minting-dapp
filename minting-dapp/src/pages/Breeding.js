@@ -31,7 +31,20 @@ const Breeding = () => {
             ai={"center"}
           >
 
-            <s.SpacerMedium/>
+            <s.SpacerLarge/>
+
+            <s.TextHuge
+                          style={{
+                            textAlign: "center",
+                            color: "var(--primary-text)"   ,
+                            fontWeight: "normal",           
+              
+                          }}
+                        >
+                          "Unlocking next generations through Pumpkin breeding"
+                        </s.TextHuge>
+                        <s.SpacerMedium />
+
             <s.TextSubTitle
               style={{
                 width: "95%",
@@ -40,7 +53,14 @@ const Breeding = () => {
 
               }}
             >
-              BREEDING BLABLABLABLABLABLA
+              As all pumpkins are harvested, their uniqueness will last forever,
+              but their rarest attributes will be passed from generation to generation.
+              With two LatePumpkins, harvesters will be prompt to breed them into a unique
+              second-generation pumpkin, which will inherit for each body part the rarest attributes
+              from its LateParents. As harvesters keep breeding their pumpkins and extend the three of 
+              life, lesser and lesser pumpkins from further generations will exist. Want to mix your
+              rarest pumpkin with your friend's rarest and sell the offspring together?
+              Your imagination is the limit!
             </s.TextSubTitle>
             <s.SpacerMedium/>
           

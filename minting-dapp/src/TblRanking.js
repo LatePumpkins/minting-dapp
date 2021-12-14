@@ -23,7 +23,7 @@ export class TblRanking extends Component{
                    {
                        targets: 3,
                        render: function(data) {
-                           return '<a href="https://nftrade.com/assets/avalanche/0x0b8877c54b1dd0731ca6335005062dde6fcb3709/">"<img src="/config/images/attributes/'+ data +'" style="width:60px;height:60px;"> </a>'
+                           return '<a href="https://marketplace.kalao.io/collection/0x0b8877c54b1dd0731ca6335005062dde6fcb3709/">"<img src="/config/images/attributes/'+ data +'" style="width:80px;height:80px;"> </a>'
                        }
 
                    }

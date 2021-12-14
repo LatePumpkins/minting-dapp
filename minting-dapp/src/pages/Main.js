@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tale, Minting, Rarity, Breeding, Metaverse, Attributes } from './';
+import { Tale, Minting, Rarity, Breeding, Metaverse, Rewards, Attributes } from './';
 
 
 const Main = () => (
@@ -9,6 +9,7 @@ const Main = () => (
 		<Rarity />
 		<Breeding />
 		<Metaverse />
+		<Rewards />
 		<Attributes />
 		
 		

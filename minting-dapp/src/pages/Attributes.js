@@ -22,17 +22,41 @@ const Attributes = () => {
         ai={"center"}
       >
 
+          <s.TextHuge
+              style={{
+                textAlign: "center",
+                color: "var(--primary-text)"   ,
+                fontWeight: "normal",           
+  
+              }}
+            >
+              Attributes rarities
+            </s.TextHuge>
+            <s.SpacerMedium />
+
+            <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--accent-text)"              
+
+            }}> 
+            
+            For the OG Laties, the ones that care about the smallest of details, in the following tables you can find the specific rarity of each of the already minted attributes, with an example of it!
+            </s.TextDescription>
+
           <s.Container jc={"center"} ai={"center"}           
-            style={{ width: "70%" }}>
+            style={{ width: "auto" }}>
+
+                        <s.SpacerLarge />
 
                         <s.Container 
                         flex={1}
                         ai={"center"}
 
                         style={{ 
-                          padding: 24, 
+                          padding: 12, 
                           backgroundColor: "var(--accent)" ,
-                          padding: 24,
+                          padding: 12,
                           borderRadius: 15,
                           border: "5px groove var(--secondary)",
                           boxShadow: "0px 0px 30px 30px rgba(0,0,0,0.7)",  
@@ -41,24 +65,6 @@ const Attributes = () => {
                         }}
                         
                         jc={"center"}>
-
-                       
-                    
-
-                      
-                      
-            
-
-                        
-                        <s.TextHuge
-                          style={{
-                            textAlign: "center",
-                            color: "var(--primary-text)"              
-              
-                          }}
-                        >
-                          Attributes
-                        </s.TextHuge>
 
                         <s.TextTitle
                           style={{
