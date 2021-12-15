@@ -6,8 +6,9 @@ import './Page.css';
 import * as s from "../styles/globalStyles";
 import styled from "styled-components";
 
-export const StyledLogo = styled.img`
-  width: 250px;
+
+export const StyledImage = styled.img`
+  width: 350px;
   @media (min-width: 767px) {
     width: 600px;
   }
@@ -63,6 +64,12 @@ const Breeding = () => {
               Your imagination is the limit!
             </s.TextSubTitle>
             <s.SpacerMedium/>
+
+            <a href='https://kalao.io/'>
+              <StyledImage alt={"example"} src={"/config/images/breeding.png"} />
+              </a>
+
+              <s.SpacerMedium/>
           
           
 

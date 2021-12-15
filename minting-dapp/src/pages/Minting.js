@@ -134,10 +134,8 @@ export const StyledImg = styled.img`
   border: 4px groove var(--secondary);
   background-color: var(--accent);
   border-radius: 10%;
-  width: 200px;
-  @media (min-width: 500px) {
-    width: 100px;
-  }
+  width: 170px;
+ 
   @media (min-width: 800px) {
     width: 170px;
   }

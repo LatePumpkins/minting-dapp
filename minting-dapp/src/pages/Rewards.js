@@ -30,12 +30,9 @@ const Rewards = () => {
             flex={1}
             ai={"center"}
           >
-
-            <s.SpacerMedium/>
-
             <s.TextHuge
                           style={{
-                            textAlign: "justify",
+                            textAlign: "center",
                             color: "var(--primary-text)"   ,
                             fontWeight: "normal",           
               

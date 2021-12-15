@@ -6,13 +6,16 @@ import './Page.css';
 import * as s from "../styles/globalStyles";
 import styled from "styled-components";
 
-export const StyledLogo = styled.img`
-  width: 250px;
-  @media (min-width: 767px) {
-    width: 600px;
+export const StyledMiniLogo = styled.img`
+ 
+
+  @media (min-width: 500px) {
+    width: 200px;
   }
-  transition: width 0.5s;
-  transition: height 0.5s;
+  @media (min-width: 700px) {
+    width: 500px;
+  }
+
 `;
 
 const Metaverse = () => {
@@ -35,7 +38,7 @@ const Metaverse = () => {
 
             <s.TextHuge
                           style={{
-                            textAlign: "justify",
+                            textAlign: "center",
                             color: "var(--primary-text)"   ,
                             fontWeight: "normal",           
               
@@ -53,12 +56,19 @@ const Metaverse = () => {
 
               }}
             >
-              As all pumpkins are harvested, their uniqueness will last forever, but their rarest attributes will be passed from generation to generation.
-              With two LatePumpkins, harvesters will be prompt to breed them into a unique second-generation pumpkin, which will inherit for each body part the rarest attributes from its LateParents.
-              As harvesters keep breeding their pumpkins and extend the three of life, lesser and lesser pumpkins from further generations will exist. Want to mix your rarest pumpkin with your friend's
-              rarest and sell the offspring together? Your imagination is the limit!
+              When the collection is fully harvested, a community-designed Metaverse Gallery 
+              will be created within the Kalao Ecosystem, and the pumpkins will be exposed 
+              for owners and lazy fans to check out in VR. Moreover, if encouraged by the community, an initative
+              to acquire a parcel in a mainstream platform (like Decentraland or Sandbox) will be put to the vote.
+              If approved, a wearable 3D version of each Pumpkin will be created and delivered to the owners for free.
+
             
             </s.TextSubTitle>
+            
+            <s.SpacerMedium/>
+            <a href='https://kalao.io/'>
+              <StyledMiniLogo alt={"example"} src={"/config/images/kalao-logo.png"} />
+              </a>
             <s.SpacerLarge/>
           
           

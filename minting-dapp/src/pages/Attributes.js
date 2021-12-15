@@ -198,6 +198,18 @@ const Attributes = () => {
                     
                   </s.Container>
 
+                  <s.SpacerMedium />          
+                  <s.TextDescription
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)"              
+              
+                          }}
+                        >
+                          &copy; Copyright 2021 LatePumpkins.com - All rights reserved
+                        </s.TextDescription>
+                  <s.SpacerMedium />   
+
                   </s.Container>
               </section>
 
